@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { Navbar } from "../ui";
+import { Navbar, SideMenu } from "../ui";
 
 interface IProps {
   title: string;
@@ -32,6 +32,7 @@ export const ShopLayout = ({
       </nav>
 
       {/* TODO: sidebar */}
+      <SideMenu />
 
       <main
         style={{
