@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import type { NextPage } from "next";
 import { ShopLayout } from "../components/layouts";
-import { ProductList } from "../components/product";
+import { ProductList } from "../components/products";
 import { initialData } from "../database/products";
 
 const Home: NextPage = () => {

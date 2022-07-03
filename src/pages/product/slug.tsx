@@ -1,12 +1,13 @@
 import { Button, Chip, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { initialData } from "../../database/products";
-import { ShopLayout } from "../layouts";
-import { ProductSlideShow } from "./ProductSlideshow";
+import { ShopLayout } from "../../components/layouts";
+import { ProductSlideShow } from "../../components/products/ProductSlideshow";
+import { ItemCounter } from "../../components/ui";
 
 const product = initialData.products[0];
 
-export function ProductPage() {
+export default function ProductPage() {
   return (
     <ShopLayout title={product.title} pageDescription={product.description}>
       <Grid container spacing={3}>
@@ -30,6 +31,7 @@ export function ProductPage() {
               <Box sx={{ my: 2 }}>
                 <Typography variant="subtitle2">Quantity</Typography>
                 {/* item count */}
+                <ItemCounter />
               </Box>
 
               {/* put in the cart */}
