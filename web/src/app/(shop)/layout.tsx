@@ -1,10 +1,13 @@
+import { TopMenu } from "@/components";
+
 export default function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <main className="bg-red-500 min-h-screen font-bold">
+        <main className="min-h-screen">
+            <TopMenu />
             {children}
         </main>
     );
