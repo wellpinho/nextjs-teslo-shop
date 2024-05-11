@@ -1,10 +1,5 @@
+import { robotoFont } from './config/fonts'
 import './globals.css'
-import { Roboto } from 'next/font/google'
-
-const inter = Roboto({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'] 
-})
 
 export const metadata = {
   title: 'well shop',
@@ -18,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={robotoFont.className}>{children}</body>
     </html>
   )
 }
