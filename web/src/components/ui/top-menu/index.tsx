@@ -6,10 +6,9 @@ export function TopMenu () {
     return (
         <nav className="
             flex 
-            px-5 
             justify-between
-            items-center,
             w-full
+            items-center
         ">
             <div>
                 <Link href="/">
@@ -19,6 +18,15 @@ export function TopMenu () {
             </div>
 
             <div className="hidden sm:flex">
+            <div className="
+                    m-2
+                    p-2
+                    rounded-sm
+                    transition-all
+                    hover:bg-gray-100
+                ">
+                    <Link href="/shop">Home</Link>
+                </div>
                 <div className="
                     m-2
                     p-2

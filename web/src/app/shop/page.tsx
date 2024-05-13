@@ -1,10 +1,12 @@
-import { titleFont, titleMontSerrat } from "@/config/fonts";
+import { Title } from "@/components";
 
 export default function Home() {
   return (
-    <main className="">
-      <h1>first font</h1>
-      <h1 className={titleMontSerrat.className}>second font</h1>
-    </main>
+    <>
+      <Title 
+        title="Home page" 
+        subtitle="subtitulo"
+      />
+    </>
   );
 }

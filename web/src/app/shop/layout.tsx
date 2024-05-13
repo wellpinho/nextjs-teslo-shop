@@ -6,9 +6,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <main className="min-h-screen">
+        <main className="container mx-auto min-h-screen">
             <TopMenu />
-            {children}
+            <div className="md:px-7">
+                {children}
+            </div>
         </main>
     );
 }
