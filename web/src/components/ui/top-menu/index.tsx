@@ -26,7 +26,7 @@ export function TopMenu () {
                     transition-all
                     hover:bg-gray-100
                 ">
-                    <Link href="/category/men">Man</Link>
+                    <Link href="/shop/category/man">Man</Link>
                 </div>
 
                 <div className="
@@ -36,7 +36,7 @@ export function TopMenu () {
                     transition-all
                     hover:bg-gray-100
                 ">
-                    <Link href="/category/men">Woman</Link>
+                    <Link href="/shop/category/woman">Woman</Link>
                 </div>
 
                 <div className="
@@ -46,7 +46,7 @@ export function TopMenu () {
                     transition-all
                     hover:bg-gray-100
                 ">
-                    <Link href="/category/men">Kids</Link>
+                    <Link href="/shop/category/kids">Kids</Link>
                 </div>
             </div>
 
