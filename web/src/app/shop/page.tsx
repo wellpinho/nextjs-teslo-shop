@@ -1,4 +1,7 @@
-import { Title } from "@/components";
+import { ProductsComponent, Title } from "@/components";
+import { initialData } from "@/seed/seed";
+
+const products = initialData.products;
 
 export default function Home() {
   return (
@@ -7,6 +10,8 @@ export default function Home() {
         title="Home page" 
         subtitle="subtitulo"
       />
+
+      <ProductsComponent products={products} />
     </>
   );
 }
