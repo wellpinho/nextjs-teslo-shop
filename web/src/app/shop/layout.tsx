@@ -1,4 +1,4 @@
-import { TopMenu } from "@/components";
+import { Sidebar, TopMenu } from "@/components";
 
 export default function RootLayout({
     children,
@@ -8,6 +8,7 @@ export default function RootLayout({
     return (
         <main className="container mx-auto min-h-screen">
             <TopMenu />
+            <Sidebar />
             <div className="md:px-7">
                 {children}
             </div>

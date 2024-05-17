@@ -1,8 +1,13 @@
+'use client'
+
 import { titleFont } from "@/config/fonts";
-import { Basket, MagnifyingGlass, ShoppingBag } from "@phosphor-icons/react/dist/ssr";
+import { CustomMenu } from "@/hooks";
+import { MagnifyingGlass, ShoppingBag } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 export function TopMenu () {
+    const isMenuOpen = CustomMenu( state => state.openSideMenu );
+
     return (
         <nav className="
             flex 
@@ -80,7 +85,7 @@ export function TopMenu () {
                     </div>
                 </Link>
 
-                <button>
+                <button onClick={() => isMenuOpen()}>
                     <div className="m-2 rounded-md transition-all hover:bg-gray-100">
                         Menu
                     </div>
